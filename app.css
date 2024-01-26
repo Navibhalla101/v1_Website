@@ -1,0 +1,336 @@
+.container{display: inline-block;}
+/* General styles */
+body {
+    
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+    
+    
+}
+
+/* Remove duplicate display rules */
+#container {
+    display: flex; /* Remove duplicate rule */
+    display: column; /* Remove duplicate rule */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 600px 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#left-side,
+#right-side {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+section {
+    display: inline-block;
+    vertical-align: top;
+    width: 100vw;
+    padding: 20px;
+}
+
+#big-buttons1 {
+    flex-shrink: 0;
+    padding: 20px;
+}
+
+
+#big-buttons2 {
+    flex-shrink: 0;
+    padding: 20px;
+}
+#big-buttons3 {
+    flex-shrink: 0;
+    padding: 20px;
+}
+
+
+#cover-page {
+    justify-content: center;
+}
+
+
+
+ /*Left side styles*/ 
+ #left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 0;
+    width: 100%;
+    height: auto;
+    background-image: url('c:/Users/User/Downloads/pt_2 (1).jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: auto;
+    font-family: volta;
+    transform: translateY(0);
+    transition: transform 0.5s ease;
+}
+
+
+@media only screen and (min-width: 400px) {
+    left-side {
+      background-image: url('c:/Users/User/Downloads/pt_2.jpg');
+    }
+  }
+
+button {
+    display: block;
+    width: 100%;
+    margin-top: 100%;
+    margin: 100px 0; /* Adjust top and bottom margins */
+    padding: 10px; /* Optional: Add padding for better visual appearance */
+    box-sizing: border-box; /* Ensure padding is included in the total width */
+}
+
+
+.big-button1 {
+
+    transform: translate(-10%, 160%);
+}
+.big-button2{
+    transform: translate(-10%, 180%);
+}
+.big-button3{
+    transform: translate(-10%, 200%);
+}
+.big-button4{
+    transform: translate(-10%, 220%);
+}
+/*
+.big-button1:hover{
+    transform: translateY(-10px);
+    color: var(--clr-light);
+}
+
+#big-button2 {
+    padding: 1px 1px;
+    display: flex;
+    align-items: center;
+    flex: 56;
+    transition: transform .3s;
+}
+.big-button2:hover{
+    transform: translateY(-10px);
+    background-color: green;
+    color: var(--clr-light);
+}
+
+
+
+#big-button3 {
+    padding: 1px 1px;
+    display: flex;
+    align-items: center;
+    flex: 56;
+    transition: transform .3s;
+
+}
+.big-button3:hover{
+    transform: translateY(-10px);
+    background-color: green;
+    color: var(--clr-light);
+    
+}
+#big-button4 {
+    padding: 1px 1px;
+    display: flex;
+    align-items: center;
+    flex: 56;
+    transition: transform .3s;
+}
+.big-button4:hover{
+    transform: translateY(-10px);
+    background-color: green;
+    color: var(--clr-light);
+}
+
+*/
+
+
+.linkedin {
+    font-size: 14px;
+    color: black;
+    margin: 100px 10px;
+    text-decoration: none;
+    transform: translate(20px, -640px);
+}
+
+.linkedin:hover {
+    text-decoration: underline;
+}
+
+
+#linkedin {
+    width: 40%;
+    height: 100%;
+}
+.github{
+    font-size: 14px;
+    color: black;
+    margin: 0px 10px;
+    text-decoration: none;
+    transform: translate(200px, -895px);
+}
+
+#github {
+    width: 40%;
+    height: 100%;}
+
+
+
+/* Right side styles */
+#right-side {
+    background-image: url('c:/Users/User/Downloads/pt_5 (2).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: auto;
+
+    overflow-y: scroll; /* Enable vertical scrolling */
+    scroll-behavior: smooth;
+    overflow-x: hidden; /* Hide horizontal overflow */
+    padding: 20px;
+    box-sizing: border-box;
+    font-style: initial;
+    font-size: xxx-large;
+    letter-spacing: 5px;
+    color:blue;
+    
+    }
+    
+#right-side{
+    background-color: rgb(225, 252, 236);
+    }
+    
+
+
+
+/* Heading styles */
+/* Heading styles */
+.text {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    height: 100vh;
+    font-size: 4vw;
+    letter-spacing: 1vw;
+    font-family: Volta;
+    color: rgb(186, 180, 236);
+    padding: 1px 1px;
+    transition: transform .3s;
+    
+    transform: translate(5%, 70%);
+    /* Animation */
+
+
+}
+
+
+
+.text p {
+    margin: 0; /* Remove default margin for paragraphs */
+}
+
+/* Wrapper styles */
+.wrapper {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-20%, 1%);
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    max-width: 80%; /* Set maximum width for responsiveness */
+    flex-direction: column;
+    font-family: Volta;
+
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.static-txt,
+.dynamic-txt {
+    font-size: 4vw; /* Responsive font size based on viewport width */
+
+}
+
+.static-txt {
+    font-size: 4vw; /* Responsive font size based on viewport width */
+    font-weight: 400;
+    margin-top: 0;
+    padding: 1px 1px;
+    display: flex;
+    align-items: center;
+    font-family: Volta;
+
+    flex: 56;
+    color: rgb(186, 180, 236);
+    display: inline-block;
+    transform: translate(-100%, -10%);
+
+}
+
+
+.wrapper .dynamic-txt {
+    margin-left: 15px;
+    height: 90px;
+    font-size: 20px;
+    line-height: 90px;
+    font-family: Volta;
+
+    overflow: hidden;
+    transform: translate(-15%, -167%);
+    font-family: monospace;
+}
+
+.wrapper .dynamic-txt li {
+    color: rgb(255, 255, 255);
+    list-style-type: none;
+    font-family: Volta;
+
+    font-size: 45px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 6s infinite; /* Added slide animation */
+}
+
+@keyframes slide {
+    0%, 100% {
+        transform: translateY(-100);
+    }
+    10%, 20% {
+        transform: translateY(-90px);
+    }
+    30%, 40% {
+        transform: translateY(-180px);
+    }
+    50%, 60% {
+        transform: translateY(-180px);
+    }
+}
+
+h3 {
+    color: rgb(255, 255, 255);
+    margin: 10px 0; /* Adjust margin as needed */
+    height: auto;
+    font-family: volta;
+    font-size: .7cm;
+    grid-auto-flow: row;
+    letter-spacing: .3px;
+    text-align: center; /* Center the text horizontally */
+    font-weight: lighter; /* Set the font weight to lighter */
+}

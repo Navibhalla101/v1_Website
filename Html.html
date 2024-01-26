@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="app.css" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vaishnavi Bhalla's webpage">
+    <meta name="keywords" content="webpage, Vaishnavi Bhalla, web development">
+    <meta name="author" content="Anchita Dahiya">
+    <link rel="stylesheet" type="text/css" href="cover.css"/>
+
+    <title>Vaishnavi Bhalla's WebPage</title>
+</head>
+
+<body>
+
+    <div id="left-side">
+        <div class ="container">
+            <p class = "text" >Vaishnavi Bhalla</p>
+            
+        </div>
+
+        <div class="wrapper">
+            <p class="static-txt">I'm a</p>
+            <ul class="dynamic-txt">
+                <li><span>Designer</span></li>
+                <li><span>Developer</span></li>
+                <li><span>UX/UI</span></li>
+            </ul>
+        </div>
+        
+
+            <button class="big-button1" onclick="scrollToSection('about-section')" style="border: none; padding: 0; margin: 0; overflow: hidden; width: 150px; height: 150px; background: transparent; margin-left: 20px; top: 50px">
+                <img src="c:/Users/User/Downloads/club.png" alt="Button Icon" style="width: 50%; height: 60%; object-fit: cover; opacity: 0.9;">
+            </button>
+    
+    
+            <button class="big-button2" onclick="scrollToSection('experience-section')" style="border: none; padding: 0; margin: 0; overflow: hidden; width: 150px; height: 150px; background: transparent; margin-left: 20px; top: 50px">
+                <img src="c:/Users/User/Downloads/diamond.png" alt="Button Icon" style="width: 50%; height: 60%; object-fit: cover; opacity: 0.9;">
+            </button>
+            
+    
+            <button class="big-button3" onclick="scrollToSection('projects-section')" style="border: none; padding: 0; margin: 0; overflow: hidden; width: 150px; height: 150px; background: transparent; margin-left: 20px; top: 50px">
+                <img src="c:/Users/User/Downloads/heart.png" alt="Button Icon" style="width: 60%; height: 60%; object-fit: cover; opacity: 0.9;">
+            </button>
+            
+    
+    
+            <button class="big-button4" onclick="scrollToSection('intrests-section')" style="border: none; padding: 0; margin: 0; overflow: hidden; width: 150px; height: 150px; background: transparent; margin-left: 20px; top: 50px">
+                <img src="c:/Users/User/Downloads/spade.png" alt="Button Icon" style="width: 60%; height: 60%; object-fit: cover; opacity: 0.9;">
+
+        </button>
+
+        <a class="linkedin" href="https://www.linkedin.com/in/vaishnavibhalla" target="_blank">
+            <img src="c:/Users/User/Downloads/linkdin.png" alt="linkedin" id="linkedin"/>
+        </a>
+
+        <a class="github" href="https://github.com/Navibhalla101" target="_blank" >
+            <img src="c:/Users/User/Downloads/github.png" alt="GitHub" id="github"/>
+        </a>
+
+    </div>
+
+    <div id="right-side">
+        <section id="about-section">
+            <h2>About Section</h2>
+            <p>This is the About section of the webpage.
+                
+            </p>
+        </section>
+
+        <section id="experience-section">
+            <h2>Experience Section</h2>
+            <p>This is the Experience section of the webpage.
+            </p>
+        </section>
+
+        <section id="projects-section">
+            <h2>Projects Section</h2>
+            <p>This is the Projects section of the webpage.</p>
+        </section>
+        <section id="intrests-section">
+            <h2>Projects Section</h2>
+            <p>This is the Projects section of the webpage.</p>
+        </section>
+    </div>
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+</body>
+
+<script src="app.js"></script>
+
+</html>
